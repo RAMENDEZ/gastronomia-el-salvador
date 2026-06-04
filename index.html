@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Cuzcatleco - Gastronomía de El Salvador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Sabor<span>Cuzcatleco</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Platillos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>El Auténtico Sabor Salvadoreño</h1>
+            <p>Descubre la riqueza culinaria de El Salvador, desde las tradicionales pupusas hasta el reconfortante atol de elote.</p>
+            <a href="#servicios" class="cta-btn">Ver Menú Tradicional</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="container">
+        <h2>Nuestra Tradición</h2>
+        <p>En Sabor Cuzcatleco nos dedicamos a preservar y difundir las recetas ancestrales de nuestra tierra. Cada platillo está elaborado con ingredientes 100% locales, manteniendo vivo el legado culinario que ha pasado de generación en generación en los hogares salvadoreños.</p>
+    </section>
+
+    <section id="servicios" class="container bg-light">
+        <h2>Nuestras Especialidades</h2>
+        <div class="grid-services">
+            <div class="card">
+                <h3>Pupusas Revueltas</h3>
+                <p>Hechas a mano con masa de maíz o arroz, rellenas de chicharrón, frijoles refritos y queso derretido. Servidas con curtido y salsa de tomate casera.</p>
+            </div>
+            <div class="card">
+                <h3>Tamales de Elote</h3>
+                <p>Suaves y dulces tamales elaborados con elote tierno molido, acompañados de una porción de crema fresca salvadoreña.</p>
+            </div>
+            <div class="card">
+                <h3>Yuca Frita con Pescaítas</h3>
+                <p>Yuca frita crujiente servida con curtido, salsa y las tradicionales pescaítas fritas o merienda de cerdo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Hacer un Pedido o Consulta</h2>
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span class="error-message" id="errorNombre"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-message" id="errorEmail"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Mensaje o Pedido:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <span class="error-message" id="errorMensaje"></span>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            <div id="successMessage" class="success-message">¡Tu mensaje ha sido enviado con éxito! Nos comunicaremos pronto.</div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Sabor Cuzcatleco. Desarrollado por Roberto A. Méndez</p>
+        <p>San Salvador, El Salvador | Síguenos en Redes Sociales</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
